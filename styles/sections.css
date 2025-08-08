@@ -1,0 +1,7 @@
+#featured {
+  img {
+    height: 100%; /* cobre o espaço todo */
+    object-fit: cover; /* faz a cobertura de todo espaço que estava sobrando */
+    border-radius: 4px;
+  }
+}
