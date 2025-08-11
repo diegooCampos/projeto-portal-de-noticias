@@ -2,6 +2,22 @@
   img {
     height: 100%; /* cobre o espaço todo */
     object-fit: cover; /* faz a cobertura de todo espaço que estava sobrando */
+  }
+  
+  .card {
     border-radius: 4px;
+    position: relative; 
+    overflow: hidden;
+
+    &::before { /* é a mesma coisa que card::before{} */ 
+     content: "";
+     position: absolute; /* absoluto dentro da caixa */ 
+     inset: 0; 
+     top: 50%;
+     background: linear-gradient(
+      180deg, 
+      transparent 0%,
+      #020617 100%);
+    }
   }
 }
