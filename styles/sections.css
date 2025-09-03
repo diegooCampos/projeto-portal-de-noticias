@@ -24,6 +24,7 @@ section header {
 }
 
 #featured {
+  grid-area: featured;
   img {
     height: 100%; /* cobre o espaço todo */
     object-fit: cover; /* faz a cobertura de todo espaço que estava sobrando */
@@ -63,6 +64,7 @@ section header {
 }
 
 #weekly {
+  grid-area: weekly;
   &>div { /* no primeiro nivel de div */
     grid-template-columns: repeat(4, 292px);
   }
@@ -88,9 +90,32 @@ section header {
   }
 }
 
-/* #ai {
-  article div img{ 
+#ai {
+  grid-area: ai;
+  img { 
     width: 176px;
-    height: 176px;
+    aspect-ratio: 1/1 /* faz a imagem ficar quadrada*/;
+    object-fit: cover;
   }
-} */
+
+  h3 {
+    margin-block: 8px 4px;
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+
+#more {
+  margin-top: 32px;
+
+  h3 {
+    margin-top: 8px;
+  }
+  img {
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
