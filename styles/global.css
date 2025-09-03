@@ -36,7 +36,7 @@ a:hover {
 }
 
 h1, h2, h3 {
-  font: inherit;
+  font: inherit; /* propriedade para dizer que vai herdar a cor do pai */
 }
 
 img {
